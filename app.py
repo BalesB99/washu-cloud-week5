@@ -4,7 +4,7 @@ app = Flask(__name__)
 def home():
     return jsonify({"message": "Hello from WashU Cloud Computing Week 5!- CI/CD Pipelines", "platform": "ECS Fargate via GitHub Actions", "course": "Containers and Serverless", "version": "2.0"})
 @app.route('/health')
-def health():
+def health()
     return jsonify({"status": "healthy"})
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
